@@ -83,7 +83,7 @@ public class Multiplication
         Assert.ThrowsException<ArgumentNullException>(() => Program.Multiply(null, null));
     }
 }
-//Divide
+
 [TestClass]
 public class Division
 {
@@ -118,9 +118,9 @@ public class Power
     [TestMethod]
     public void Power_Valid_Patino()
     {
-        Assert.AreEqual(3, Program.Power("1", "2"));
-        Assert.AreEqual(5, Program.Power("3", "2"));
-        Assert.AreEqual(12, Program.Power("5", "7"));
+        Assert.AreEqual(3, Program.Power("3", "1"));
+        Assert.AreEqual(5, Program.Power("5", "1"));
+        Assert.AreEqual(9, Program.Power("3", "2"));
     }
 
     [TestMethod]
